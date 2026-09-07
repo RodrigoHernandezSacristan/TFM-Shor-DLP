@@ -12,7 +12,7 @@
 ### Descripción
 
 El problema del logaritmo discreto (DLP) es uno de los principales problemas utilizados en criptografía y consiste en lo siguiente: 
-"Dado un número primo $p$, un generador $g$ de $\mathbb{Z}_p$ y un elemento $h$ de $\{Z}_p$, encontrar un entero $x$ tal que $0\leq x \leq p-2$ tal que $g^{x}=h\pmod{p}$."
+"Dado un número primo $p$, un generador $g$ de $\mathbb{Z}_p^{\star}$ y un elemento $h$ de $\{Z}_p^{\star}$, encontrar un entero $x$ tal que $0\leq x \leq p-2$ tal que $g^{x}=h\pmod{p}$."
 
 La seguridad de criptosistemas muy importantes y utilizados como Diffie-Hellman, ElGamal o el Algoritmo estándar de firma digital basan su seguridad en la enorme complejidad de resolver este problema, tal es la dificultad de hacerlo que no existen algoritmos implementables en ordenadores clásicos que lo resuelvan en tiempo polinómico; sin embargo, Peter Shor en la última década del Siglo XX desarrolló a nivel teórico un algoritmo cuántico (el algoritmo de Shor para resolver el DLP) que resolvía este problema en tiempo polinómico gracias al poder computacional que rigen las leyes de la computación cuántica.
 
